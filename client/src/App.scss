@@ -1,0 +1,88 @@
+@import '~bootstrap/scss/bootstrap.scss';
+body{
+    background-color: white;
+    overflow-x:hidden;
+}
+.media-form{
+    background-color: white;
+    margin-top: 12% !important;
+    border-radius: 30px;
+    font-family: Arial;
+    .title{
+        padding-top: 45px;
+        text-align: center;
+    }
+    span{
+        font-size: 13px;
+    }
+}
+
+.navbar-block{
+    .navbar-brand{
+        color: white !important;
+        font-family: "Helvetica Neue", Arial;
+    }
+    background-color: #09c;
+    color: white !important;
+}
+.guestbook:hover{
+    background-color: #0200fb;
+}
+.guestbook{
+    background-color: #09c;
+    color: white;
+    height: 150px;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 20px;
+    cursor: pointer;
+    h2{
+        margin-top: 20%;
+    }
+    p{
+        margin-left: 60%;
+        margin-top: 10%;
+        font-weight: 700;
+        color: #4afbb2;
+    }
+
+}
+
+$articleBackground : #F8F9FA;
+.article-heading{
+    padding: 8px;
+    .owner{
+        font-size: small;
+        font-weight: 200;
+    }
+}
+.message
+{
+    @extend .article-heading;
+}
+.message:hover{
+    background-color: $articleBackground;
+}
+
+.article-show{
+    @extend .article-heading;
+}
+
+.message-comment{
+  @extend .message;
+  span{
+    font-size: 13px;
+  }
+}
+.message-reply{
+  margin-left: 50px;
+  .reply{
+    border-radius: 50px;
+  }
+  .btn{
+    border-radius: 30px;
+    background-color: #09c;
+    border-color: transparent;
+  }
+}
+
